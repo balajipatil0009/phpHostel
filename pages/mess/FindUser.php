@@ -2,9 +2,6 @@
 <!-- this page is for cheaking that the student paid mess fees or not by its student id -->
 
 <?php
-
-use function PHPSTORM_META\type;
-
 require "/var/www/collage/conn.php";
 try{
     $res = mysqli_query($conn,"SELECT * FROM fees");
@@ -33,3 +30,4 @@ try{
         border: 1px solid;
     }
 </Style>
+
