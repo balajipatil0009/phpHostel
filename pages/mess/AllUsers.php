@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="./AllUsers.php" method="post">
-    <label for="find user">Find User By ID</label><br>
-    <input type="text" name="ID">
-    <button type="submit" onclick="clearhs()">FIND</button>
+        <label for="find user">Find User By ID</label><br>
+        <input type="text" name="ID">
+        <button type="submit" onclick="clearhs()">FIND</button>
     </form>
 </body>
+
 </html>
 <?php
 require "/var/www/collage/conn.php";
@@ -41,12 +44,13 @@ if($ID){
 ?>
 
 <Style>
-    table{
-        background-color: #00ffde;
+table {
+    background-color: #00ffde;
     border: 4px solid #6b6a6a;
     border-collapse: collapse;
-    }
-    td{
-        border: 1px solid;
-    }
+}
+
+td {
+    border: 1px solid;
+}
 </Style>
