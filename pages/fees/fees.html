@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <form action="fees.php" method="post">
-        <label for="stdID">student ID :</label>
-        <input type="number" name="stdID"><br>
-        <label for="feeTYPE">fees of :</label>
-        <input type="text" name="feeTYPE"><br>
-        <label for="amount">Amount :</label>
-        <input type="number" name="amount"><br>
-
-        <button type="submit">SUBMIT</button>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center text-lg">Pay fees</h1>
+    <form action="./fees.php" method="POST" class="flex flex-col gap-1 p-4">
+      <input
+        class="border border-0 border-b-2 p-2"
+        type="number"
+        name="stdID"
+        placeholder="Student ID"
+      />
+      <input
+        class="border border-0 border-b-2 p-2"
+        type="number"
+        name="feeTYPE"
+        placeholder="Select type of fee"
+      />
+      <input
+        class="border border-0 border-b-2 p-2"
+        type="number"
+        name="amount"
+        placeholder="Enter Amount"
+      />
+      <button
+        type="submit"
+        class="bg-sky-400 w-[20vw] self-center p-1 rounded mt-2"
+      >
+        submit
+      </button>
     </form>
-</body>
+  </body>
 </html>

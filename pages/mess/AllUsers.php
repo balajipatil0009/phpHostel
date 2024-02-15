@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="./AllUsers.php" method="post">
+    <form action="./AllUsers.php" method="POST">
         <label for="find user">Find User By ID</label><br>
         <input type="text" name="ID">
         <button type="submit" onclick="clearhs()">FIND</button>

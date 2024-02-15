@@ -1,0 +1,13 @@
+resistration page
+login page
+mess page
+staff
+complints   : type(mess, cleanning, roommates) , complaint
+asignrooms;
+all hostelers
+compasations : student id, dammage, cost, date
+fees
+search student or room 
+admin expenses
+
+
