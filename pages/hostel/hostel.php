@@ -26,7 +26,7 @@ require "/var/www/collage/conn.php";
 $stdID = $_POST['stdID'];
 try{
 
-    $res = mysqli_query($conn,"SELECT * FROM fees WHERE feeTYPE = 'sss' AND stdID = $stdID OR 1");
+    $res = mysqli_query($conn,"SELECT * FROM fees WHERE feeTYPE = 'sss' AND stdID = $stdID");
                               
     $rows = $res->fetch_all(MYSQLI_ASSOC);
     foreach($rows as $row){
