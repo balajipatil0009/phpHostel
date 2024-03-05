@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-[100vw] flex justify-center mt-3">
+    <div
+      class="flex border rounded-lg bg-gradient-to-r from-amber-300 to-amber-500 border-amber-600"
+    >
+      <div class="w-[50vw] h-[]">
+        <img src="../assets/resister.svg" alt="resister" />
+      </div>
+      <div
+        class="w-[100vw] h-fit sm:w-[60vw] md:w-[40vw] lg:w-[30vw] self-center"
+      >
+        <form
+          action="./resister.php"
+          method="POST"
+          class="flex flex-col gap-1 p-4 text-lg"
+        >
+          <h1 class="text-lg font-bold">Resister User</h1>
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="text"
+            name="name"
+            placeholder="name"
+          />
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="number"
+            name="clgID"
+            placeholder="Collage ID"
+          />
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="text"
+            name="course"
+            placeholder="Course"
+          />
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="number"
+            name="contactNo"
+            placeholder="contact number"
+          />
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="text"
+            name="parentName"
+            placeholder="parent name"
+          />
+          <input
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+            type="number"
+            name="pContact"
+            placeholder="parent contact"
+          />
+          <input
+            class="border border-0 border-b-2 border-amber-600 p-2 rounded-lg"
+            type="text"
+            name="address"
+            placeholder="address"
+          />
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-blue-200 to-indigo-500 w-[20vw] self-center p-1 rounded mt-2"
+          >
+            resister
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

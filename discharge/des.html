@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-[100vw] flex justify-center mt-3">
+    <div
+      class="flex border rounded-lg bg-gradient-to-r from-lime-100 to-lime-400 border-lime-600"
+    >
+      <div class="max-h-[90vh]">
+        <img src="../assets/discharge.svg" alt="resister" class="h-[90vh]" />
+      </div>
+      <div
+        class="w-[100vw] h-fit sm:w-[60vw] md:w-[40vw] lg:w-[30vw] self-center"
+      >
+        <form
+          action="./des.php"
+          method="post"
+          class="flex flex-col gap-1 p-4 text-lg"
+        >
+          <h1 class="text-lg font-bold">Discharge User</h1>
+          <input
+            type="number"
+            name="stdID"
+            placeholder="Enter Student Id"
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+          />
+          <input
+            type="text"
+            name="reason"
+            placeholder="Enter reason for discharge"
+            class="border border-0 border-b-2 p-2 border-amber-600 rounded-lg"
+          />
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-blue-200 to-indigo-500 w-[20vw] self-center p-1 rounded mt-2"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
